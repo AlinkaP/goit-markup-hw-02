@@ -4,7 +4,7 @@
 
 /* Заголовки h1 h2 ... #212121 */
 
-/* Белые заголовки #FFFFFF */
+/* Белые заголовки and Color footer address #ffffff */
 
 /* Футер номер тел и мейл rgba(255, 255, 255, 0.6); */
 
@@ -14,12 +14,110 @@
 
 /* Фон Команды #f5f4fa */
 
-body {
-  color: #757575;
+/* Accent color #2196f3 */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --white-text-color: #ffffff;
+  --primary-bg-color: #e5e5e5;
+  --secondary-bg-color: #2f303a;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
+body {
+  color: var(--primary-text-color);
+  background: var(--white-text-color);
+}
+
+/* Logo colors Web + Studio*/
+
 .logo {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+
+.studio-header {
+  color: #000000;
+}
+
+/* Site-nav */
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* Header contacts */
+
+.header-contacts {
+  color: var(--primary-text-color);
+}
+
+.header-contacts:hover,
+.header-contacts:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero-title,
+.hero-link {
+  color: var(--white-text-color);
+}
+
+.button {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+}
+
+.hero-background,
+.foot-background {
+  background-color: var(--secondary-bg-color);
+}
+
+/* Section-title */
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Work title Чем мы занимаемся */
+
+.work-title {
+  color: var(--title-text-color);
+}
+
+/* Team-title colors */
+
+.team-title {
+  color: var(--title-text-color);
+}
+
+h2 {
+  color: var(--title-text-color);
+}
+
+.team-background {
+  background-color: #f5f4fa;
+}
+
+/* Footer */
+
+.studio-footer {
+  color: var(--white-text-color);
+}
+
+.footer-address {
+  color: var(--white-text-color);
+}
+
+.footer-contacts {
+  color: var(--footer-contacts-color);
 }
 
 /* Убрать маркеры */
@@ -28,39 +126,6 @@ ul {
   list-style: none;
 }
 
-/* Site-nav */
-
-.site-nav .link {
-  color: #212121;
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: #2196f3;
-}
-
-/* Section-title */
-
-.section-title {
-  color: #212121;
-}
-
-/* Backgrounds dark */
-
-.hero-background,
-.foot-background {
-  background-color: #2f303a;
-}
-
-/* White заголовки */
-
-.hero-title,
-.hero-link {
-  color: #ffffff;
-}
-
-/* Песочный фон */
-
-.team-background {
-  background-color: #f5f4fa;
+a {
+  text-decoration: none;
 }
